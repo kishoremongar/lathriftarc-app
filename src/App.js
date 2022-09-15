@@ -6,6 +6,7 @@ function App() {
     <>
       <h1 className="text-3xl font-bold underline header">Hello world!</h1>
       <Button variant="contained">Hello World</Button>
+      <Button variant="contained">Add</Button>
     </>
   );
 }

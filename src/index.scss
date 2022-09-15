@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$myColor: blue;
+
+h1 {
+  color: $myColor;
+}

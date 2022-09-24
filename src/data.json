@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "Blue Shirt",
+    "productImage": "https://res.cloudinary.com/fushigina-shinobi/image/upload/v1664008364/Pink-hoodie_vbnacz.jpg",
+    "brand": "H & M",
+    "realPrice": "1399",
+    "sellingPrice": "649",
+    "ctaBtn": "Add to cart"
+  },
+  {
+    "id": "2",
+    "title": "White Top",
+    "productImage": "https://res.cloudinary.com/fushigina-shinobi/image/upload/v1664008364/Pink-hoodie_vbnacz.jpg",
+    "brand": "Nike",
+    "realPrice": "1499",
+    "sellingPrice": "799",
+    "ctaBtn": "Add to cart"
+  },
+  {
+    "id": "3",
+    "title": "Pink Hoodie",
+    "productImage": "https://res.cloudinary.com/fushigina-shinobi/image/upload/v1664008364/Pink-hoodie_vbnacz.jpg",
+    "brand": "Dior",
+    "realPrice": "399",
+    "sellingPrice": "299",
+    "ctaBtn": "Add to cart"
+  },
+  {
+    "id": "4",
+    "title": "Black Jeans",
+    "productImage": "https://res.cloudinary.com/fushigina-shinobi/image/upload/v1664008364/Pink-hoodie_vbnacz.jpg",
+    "brand": "Puma",
+    "realPrice": "999",
+    "sellingPrice": "699",
+    "ctaBtn": "Add to cart"
+  }
+]

@@ -2,19 +2,30 @@ import React, { useState } from 'react';
 import { Burger, MultiSelect, Text, MediaQuery, Header } from '@mantine/core';
 import { CgProfile, CgShoppingCart, CgSearch } from 'react-icons/cg';
 import { MdOutlineFavoriteBorder } from 'react-icons/md';
-// import { Link } from 'react-router-dom';
+import { ReactComponent as Logo } from '../asset/logo.svg';
+import { Link } from 'react-router-dom';
 
-export default function NavBar() {
+export default function NavBar({ location }) {
   const [opened, setOpened] = useState(false);
   const [searchValue, onSearchChange] = useState('');
+  // const [showLinks, setShowLinks] = useState(false);
   const title = opened ? 'Close navigation' : 'Open navigation';
+  // let windowHeight = window.scrollY;
+  // let activeStyle = {
+  //   color: "var(--border-bottom)",
+  //   borderBottom: "1px solid var(--border-bottom)",
+  // };
+  // const toggle = (e) => {
+  //   e.preventDefault();
+  //   setShowLinks((prev) => !prev);
+  // };
 
   return (
-    <div>
+    <div className='h-[5vh]'>
       <Header
         height={70}
         p='md'
-        className='flex fixed top-0 left-0 right-0 bg-darkPink h-16 justify-between items-center border-none'
+        className={`flex fixed top-0 left-0 right-0 h-16 justify-between duration-300 transition-all ease-in items-center border-none bg-darkPink`}
       >
         <div
           className='flex justify-between items-center gap-x-10 ml-6'
@@ -30,9 +41,12 @@ export default function NavBar() {
               color='white'
             />
           </MediaQuery>
-          <Text className='text-white text-center text-xl font-medium tracking-normal font-sans'>
-            La Thrift Arc
-          </Text>
+          <div className='w-[10rem] mt-6'>
+            <Link to='/'>
+              <Logo />
+            </Link>
+          </div>
+          <Text className='text-white text-center text-xl font-medium tracking-normal font-sans'></Text>
           <Text className='text-white text-center text-md font-medium tracking-normal font-sans'>
             Catalogs
           </Text>
@@ -65,9 +79,9 @@ export default function NavBar() {
           <Text className='text-white text-2xl'>
             <CgShoppingCart />
           </Text>
-          <Text className='text-white text-2xl'>
+          <Link to='/login'>
             <CgProfile />
-          </Text>
+          </Link>
         </div>
       </Header>
     </div>

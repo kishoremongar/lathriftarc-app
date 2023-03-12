@@ -5,7 +5,7 @@ import { Carousel } from '@mantine/carousel';
 import { Image, Text } from '@mantine/core';
 
 export default function Hero() {
-  const autoplay = useRef(Autoplay({ delay: 2000 }));
+  const autoplay = useRef(Autoplay({ delay: 5000 }));
   return (
     <Carousel
       mx='auto'

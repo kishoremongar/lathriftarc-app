@@ -1,16 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Mainlayout from '../pages/mainlayout';
+import Login from '../pages/login/login';
+import ErrorPage from '../pages/error';
 
-export default function route() {
+export default function AppRoutes() {
   return (
     <Router>
       <Routes>
-        <Route index element={<Mainlayout />} />
+        <Route path='/*' element={<Mainlayout />}>
+          <Route path='login' element={<Login />} />
+        </Route>
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
     </Router>
   );
 }
-
-/**<Route path= element={} />
-        <Route path='' element={}/> */
